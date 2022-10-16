@@ -1,0 +1,15 @@
+<script>
+    class tv{ //storage
+        constructor(){
+            console.log("This is Constructor");
+            this.channel="abp"
+        }
+        volume(){
+            console.log("dolby sound");
+            console.log(this.channel);
+        }
+    }
+    var remote = new tv(); //creating a instance or object
+    var remote1 = new tv(); //creating a instance or object
+    remote.volume();
+</script>

@@ -1,0 +1,18 @@
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            ans=$("#x1").val()
+            console.log(ans)
+            api=`https://fakestoreapi.com/products/category/${ans}`
+            console.log(api);
+            $.get(api,function(response){
+                console.log(response);
+
+            })
+        })
+    })
+</script>
+<input type=""id="x1">
+<button>click here</button>

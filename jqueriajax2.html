@@ -1,0 +1,32 @@
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            ans=$("#x1").val()
+            console.log(ans)
+            api=`https://fakestoreapi.com/products/category/${ans}`
+            console.log(api);
+            $.ajax({
+                type:"get",url:api,
+                success:function(result){
+                    console.log(result);
+                    
+
+
+
+                }
+            })
+            
+        })
+    })
+</script>
+<input type=""id="x1">
+<button>click here</button>
+<div class="container">
+    <div class="row">
+
+    </div>
+
+</div>
